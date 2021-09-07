@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import Footer from "./components/footer/footer";
 import "./App.css";
 
 function App() {
@@ -28,15 +29,14 @@ function App() {
       .then(function () {
         // always executed
       });
-    
-    setCity("")
+
+    setCity("");
   };
 
   let date = new Date();
   let currDate = date.getDate();
-  let currMonth = date.toLocaleString("en-us" , {month : "long"});
+  let currMonth = date.toLocaleString("en-us", { month: "long" });
   let year = date.getFullYear();
-
 
   return (
     <div className="App">
@@ -52,7 +52,10 @@ function App() {
                 src={`http://openweathermap.org/img/wn/${weather.data.weather[0].icon}@2x.png`}
                 alt=""
               />
-           <b> <h5>{weather.data.weather[0].description.toUpperCase()}</h5></b>
+              <b>
+                {" "}
+                <h5>{weather.data.weather[0].description.toUpperCase()}</h5>
+              </b>
             </div>
             <div className="right">
               <h1 className="tempFont">
@@ -93,6 +96,7 @@ function App() {
             </button>
           </div>
         </form>
+        <Footer />
       </header>
     </div>
   );
