@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Poppins&display=swap');
+
 body{
-  background-color: #090979 !important;
-  /* background-image: url("https://www.picgaga.com/uploads/wallpaper/sky-blue/art-fantasy-hd-wallpaper-birds-starry-sky-hd-background-image1617490294.jpg") ; */
+  /* background-color: #090979 !important; */
+  background-image: url("https://images.unsplash.com/photo-1530975155254-0faede6a2473?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2t5JTIwZ3JhZGllbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+/* background-image: radial-gradient(circle, #00c8ff, #00abff, #008aff, #0060ff, #2500ff); */
 background-size: cover;
+background-repeat: no-repeat;
 color: white;
-font-family: 'Courier New', Courier, monospace;
+/* font-family: 'Courier New', Courier, monospace; */
+   font-family: 'Poppins',
+   sans-serif;
 }
 
 .App {
@@ -16,6 +22,192 @@ font-family: 'Courier New', Courier, monospace;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.report::after{
+  content: "";
+background-image: url("https://mocah.org/uploads/posts/102517-himalayas-5k-4k-wallpaper-nepal-mountains-sky-clouds.jpg");
+background-size: cover;
+opacity: 0.1;
+width: 100%;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: -1;
+}
+.report{
+border: 2px solid #0000001f;
+font-family: 'Merriweather Sans',
+sans-serif;
+padding: 34px;
+position: relative;
+margin: 48px 0px 17px 0px;
+width: 50%;
+height: 370px;
+border-radius: 5px;
+  
+  /* background-color: #09097985; */
+}
+.left{
+    text-align: start;
+    font-family: 'Poppins',
+    sans-serif;
+    width: 42%;
+    display: inline-block;
+    margin: 75px 35px 0px -47px;
+}
+.right{
+text-align: end;
+display: inline-block;
+margin: 51px -83px 0px 55px;
+vertical-align: top;
+/* display: inline; */
+width: 40%;
+}
+
+.tempFont{
+  font-size: 7.5vw;
+}
+.minTemp{
+  color: #000000;
+}
+
+.city{
+      font-size: 4vw;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.left img{
+  margin: -20px 0px 0px -18px;
+}
+
+.right h3{
+  margin: 0px 30px 0px 0px;
+}
+
+input[type=text]:focus{
+   box-shadow: inset 0 -1px 0 #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  .report {
+  width: 100%;
+  padding: 0px;
+  height: 300px;
+  }
+
+  .left{
+    text-align: start;
+    font-family: 'Poppins',
+    sans-serif;
+    width: 40%;
+    display: inline-block;
+    margin: 55px 40px 0px 0px;
+  }
+
+  .right{
+    text-align: end;
+    display: inline-block;
+    margin: 50px 0px 0px -34px;
+    vertical-align: top;
+    /* display: inline; */
+    width: 45%;
+    }
+    .right h3{
+      margin: 0px;
+    }
+    .tempFont{
+      font-size: 18vw;
+    }
+    .city{
+      font-size: 9vw;
+    }
+
+
+
+  }
+
+
+/* No greater than 900px, no less than 601px */
+@media (max-width:920px) and (min-width:601px) {
+.report {
+  width: 100%;
+  padding: 0px;
+  height: 385px;
+}
+
+.left {
+  text-align: start;
+  font-family: 'Poppins',
+    sans-serif;
+  width: 40%;
+  display: inline-block;
+  margin: 84px 40px 0px 0px;
+}
+
+.right {
+  text-align: end;
+  display: inline-block;
+  margin: 54px 0px 0px -34px;
+  vertical-align: top;
+  /* display: inline; */
+  width: 45%;
+}
+
+.right h3 {
+  margin: 0px;
+}
+
+.tempFont {
+  font-size: 18vw;
+}
+
+.city {
+  font-size: 9vw;
+}
+
+}
+
+/* No greater than 1200px, no less than 601px */
+@media (max-width:1200px) and (min-width:880px) {
+  .report {
+    width: 100%;
+    padding: 0px;
+    height: 350px;
+  }
+
+  .left {
+    text-align: start;
+    font-family: 'Poppins',
+      sans-serif;
+    width: 40%;
+    display: inline-block;
+    margin: 84px 40px 0px 0px;
+  }
+
+  .right {
+    text-align: end;
+    display: inline-block;
+    margin: 54px 0px 0px -34px;
+    vertical-align: top;
+    /* display: inline; */
+    width: 45%;
+  }
+
+  .right h3 {
+    margin: 0px;
+  }
+
+  .tempFont {
+    font-size: 10vw;
+  }
+
+  .city {
+    font-size: 6vw;
+  }
+
 }
