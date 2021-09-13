@@ -18,7 +18,6 @@ function App() {
         // handle success
         console.log(response);
         console.log(response.data);
-        const data = [response.data.main];
         setWeather(response);
         console.log(weather);
       })
