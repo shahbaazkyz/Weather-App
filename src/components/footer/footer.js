@@ -4,7 +4,11 @@ const Footer = () => {
       <footer className="footer">
         <p>
           Built with ❤️ by
-          <a href="https://github.com/Shahbaazkyz" target="_blank">
+          <a
+            href="https://github.com/Shahbaazkyz"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fa fa-github"></i>
             Shahbaazkyz
           </a>
@@ -12,6 +16,7 @@ const Footer = () => {
         <a
           className="github-button"
           href="https://github.com/shahbaazkyz/Weather-App"
+          rel="noreferrer"
           target="_blank"
           data-icon="octicon-repo-forked"
           data-show-count="true"
@@ -22,6 +27,7 @@ const Footer = () => {
         <a
           className="github-button"
           href="https://github.com/shahbaazkyz/Weather-App"
+          rel="noreferrer"
           target="_blank"
           data-icon="octicon-star"
           data-show-count="true"
