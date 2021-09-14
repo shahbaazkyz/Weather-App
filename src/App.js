@@ -12,7 +12,7 @@ function App() {
     // Make a request for a user with a given ID
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=a1a36875d10fc7c4646740447a2926d0`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=a1a36875d10fc7c4646740447a2926d0`
       )
       .then(function (response) {
         // handle success
