@@ -27,7 +27,7 @@ const Footer = () => {
         <a
           className="github-button"
           href="https://github.com/shahbaazkyz/Weather-App"
-          rel="noreferrer"
+          rel="noreferrer" 
           target="_blank"
           data-icon="octicon-star"
           data-show-count="true"

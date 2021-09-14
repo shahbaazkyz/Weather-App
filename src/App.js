@@ -48,7 +48,7 @@ function App() {
                 {currMonth + " " + currDate}, {year}
               </p>
               <img
-                src={`http://openweathermap.org/img/wn/${weather.data.weather[0].icon}@2x.png`}
+                src={`https://openweathermap.org/img/wn/${weather.data.weather[0].icon}@2x.png`}
                 alt=""
               />
               <b>
@@ -80,7 +80,7 @@ function App() {
         <h1>Weather App</h1>
 
         <form onSubmit={search}>
-          <div class="input-group mb-3">
+          <div className="input-group mb-3">
             <input
               type="text"
               className="form-control border  rounded-top  "
